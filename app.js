@@ -7,6 +7,9 @@ import dotenv from "dotenv";
 
 dotenv.config()
 
+// process.env has loaded from env variables:
+//   mongo_server, mongo_login and mongo_password 
+//   These are loaded from env variables
 mongoose.connect(process.env.mongo_server, {
   user: process.env.mongo_login, 
   pass: process.env.mongo_password
